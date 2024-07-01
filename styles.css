@@ -1,0 +1,88 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("golf2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: darkgrey;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: none;
+}
+
+ul.active {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+section {
+  padding: 60px 20px;
+}
+
+section:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
