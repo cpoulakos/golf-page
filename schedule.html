@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Schedule - DJP Invitational</title>
+    <style>
+      .schedule-table,
+      .group-table {
+        width: 100%;
+        margin: 20px 0;
+        text-align: left;
+        border-collapse: collapse;
+      }
+      .schedule-table td,
+      .group-table td {
+        padding: 8px;
+      }
+      .address-section {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <nav>
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="tournament.html">Tournament</a></li>
+            <li><a href="scores.html">Scores</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </nav>
+        <div class="banner-content">
+          <h1>2024 Tournament Schedule</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <table class="schedule-table">
+          <tr>
+            <td>2024-08-17</td>
+            <td>TimberStone - Group A 11:20-12:30 CST</td>
+            <td>Sage Run - Group B 10:00-11:10 EST</td>
+          </tr>
+          <tr>
+            <td>2024-08-18</td>
+            <td>Sage Run - Group B 9:00-10:10 EST</td>
+            <td>TimberStone - Group A 9:30-10:40 CST</td>
+          </tr>
+          <tr>
+            <td>2024-08-19</td>
+            <td colspan="2">Sweetgrass - Everyone 9:00-11:30 EST</td>
+          </tr>
+        </table>
+
+        <div class="address-section">
+          <h2>Course Addresses</h2>
+          <p>TimberStone: [Address Here]</p>
+          <p>Sage Run: [Address Here]</p>
+          <p>Sweetgrass: [Address Here]</p>
+        </div>
+
+        <table class="group-table">
+          <tr>
+            <td>
+              <h3>Group A</h3>
+              <ul>
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <!-- Add more players as needed -->
+              </ul>
+            </td>
+            <td>
+              <h3>Group B</h3>
+              <ul>
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <!-- Add more players as needed -->
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 DJP Invitational Golf Tournament. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("active");
+          });
+      });
+    </script>
+  </body>
+</html>
