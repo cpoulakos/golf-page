@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tournament - DJP Invitational</title>
+    <style>
+      .tournament-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        margin-bottom: 10px;
+      }
+      .tables-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .table {
+        width: 45%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #333;
+        color: white;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+      .footer {
+        background-color: grey;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <nav>
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="tournament.html">Tournament</a></li>
+            <li><a href="scores.html">Scores</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </nav>
+        <div class="banner-content">
+          <h1>Tournament</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="tournament-container">
+        <div class="section">
+          <h2>Top 5 Players at TimberStone</h2>
+          <div class="tables-container">
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Player 1</td>
+                    <td>Score 1</td>
+                  </tr>
+                  <tr>
+                    <td>Player 2</td>
+                    <td>Score 2</td>
+                  </tr>
+                  <tr>
+                    <td>Player 3</td>
+                    <td>Score 3</td>
+                  </tr>
+                  <tr>
+                    <td>Player 4</td>
+                    <td>Score 4</td>
+                  </tr>
+                  <tr>
+                    <td>Player 5</td>
+                    <td>Score 5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table">
+              <h2>Top 5 Players at Sage Run</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Player 1</td>
+                    <td>Score 1</td>
+                  </tr>
+                  <tr>
+                    <td>Player 2</td>
+                    <td>Score 2</td>
+                  </tr>
+                  <tr>
+                    <td>Player 3</td>
+                    <td>Score 3</td>
+                  </tr>
+                  <tr>
+                    <td>Player 4</td>
+                    <td>Score 4</td>
+                  </tr>
+                  <tr>
+                    <td>Player 5</td>
+                    <td>Score 5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Top 5 Most Improved Players Overall</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Player</th>
+                <th>Improvement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Player 1</td>
+                <td>Improvement 1</td>
+              </tr>
+              <tr>
+                <td>Player 2</td>
+                <td>Improvement 2</td>
+              </tr>
+              <tr>
+                <td>Player 3</td>
+                <td>Improvement 3</td>
+              </tr>
+              <tr>
+                <td>Player 4</td>
+                <td>Improvement 4</td>
+              </tr>
+              <tr>
+                <td>Player 5</td>
+                <td>Improvement 5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 DJP Invitational Golf Tournament. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("active");
+          });
+      });
+    </script>
+  </body>
+</html>
