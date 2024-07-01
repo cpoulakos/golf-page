@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="path/to/lightbox.css" />
+    <title>Gallery - DJP Invitational</title>
+    <style>
+      .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px 0;
+      }
+      .photo {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .year-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <nav>
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="tournament.html">Tournament</a></li>
+            <li><a href="scores.html">Scores</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </nav>
+        <div class="banner-content">
+          <h1>Gallery</h1>
+          <p>
+            Have photos? Email them
+            <a href="mailto:photos@djpinvitational.com"
+              >photos@djpinvitational.com</a
+            >.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="photo-gallery">
+        <!-- Repeat for each year -->
+        <div class="photo">
+          <a href="2023.html" data-lightbox="gallery">
+            <img src="2023/2023-001.jpg" alt="2023 Thumbnail" />
+            <div class="year-overlay">2023</div>
+          </a>
+        </div>
+        <div class="photo">
+          <a href="2024.html" data-lightbox="gallery">
+            <img src="2024/2024-001.jpg" alt="2024 Thumbnail" />
+            <div class="year-overlay">2024</div>
+          </a>
+        </div>
+        <!-- Add more years as needed -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 DJP Invitational Golf Tournament. All rights reserved.</p>
+    </footer>
+
+    <script src="path/to/lightbox.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("active");
+          });
+      });
+    </script>
+  </body>
+</html>
