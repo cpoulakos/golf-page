@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Donations - DJP Invitational</title>
+    <style>
+      .donation-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        margin-bottom: 10px;
+      }
+      .section p {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <nav>
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="donations.html">Donations</a></li>
+            <li><a href="tournament.html">Tournament</a></li>
+            <li><a href="scores.html">Scores</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </nav>
+        <div class="banner-content">
+          <h1>Donations</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="donation-container">
+        <div class="section">
+          <h2>This Year's Charity: Hides for Heroes</h2>
+          <p>
+            Hides for Heroes is a charity that collects hides from hunters and
+            sells them to raise funds to support veterans and their families.
+            They work with various community and hunting organizations to gather
+            the hides and manage the process of turning them into financial
+            support for their causes. Your contributions this year will go
+            towards supporting this noble cause.
+          </p>
+        </div>
+        <div class="section">
+          <h2>How to Donate</h2>
+          <p>
+            Participate in our 50/50 raffle for just $5 per ticket. You can
+            purchase tickets during the event.
+          </p>
+          <p>
+            Direct cash donations can be made to Nick or Colin at any time
+            during the tournament.
+          </p>
+          <p>
+            You can also donate directly via Venmo:
+            <strong>@DJP-Invitational</strong>
+          </p>
+        </div>
+        <div class="section">
+          <h2>Past Charities and Donations Achieved</h2>
+          <p>
+            Over the years, the DJP Invitational has supported various charities
+            and causes, contributing significant amounts to help those in need.
+            Here are some of the charities we have supported in the past:
+          </p>
+          <li>2023 Fisher House: Total $4,000</li>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 DJP Invitational Golf Tournament. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("active");
+          });
+      });
+    </script>
+  </body>
+</html>
