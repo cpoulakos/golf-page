@@ -5,6 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Scores - DJP Invitational</title>
+    <style>
+              form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 20%;
+            text-align: right;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        .form-group .input-group {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        .form-group .input-group input,
+        .form-group .input-group select {
+            width: 45%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        .score-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        .score-column {
+            width: 30%;
+        }
+        .score-column label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .score-column input {
+            width: calc(100% - 30px);
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
     <script>
       function confirmSubmission() {
         return confirm("Are you sure you want to submit the scores?");
