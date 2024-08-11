@@ -21,12 +21,20 @@
     header {
       height: 50vh;
     }
-    .group-tables ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .group-tables {
+      display: flex;
+      justify-content: space-between; /* Adjust spacing between columns */
+      gap: 20px; /* Adds space between the two lists */
     }
-    .group-tables h3 {
-      margin-top: 20px;
+    .group {
+      flex: 1; /* Ensures both groups take up equal space */
+    }
+    .group h3 {
+      text-align: center; /* Centers the headers */
+    }
+    ol {
+      list-style-type: decimal; /* Ordered list with numbers */
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -84,63 +92,66 @@
       </div>
 
       <div class="group-tables">
-        <h3>Group A</h3>
-        <ol>
-          <li>Nick Hatch</li>
-          <li>Rhett Surman</li>
-          <li>Mike Van der Linden</li>
-          <li>Bill Long</li>
-          <li>Rob Kuhnke</li>
-          <li>Ryan Heeti</li>
-          <li>Brad Richter</li>
-          <li>Mike Richter</li>
-          <li>Kyle Oakland</li>
-          <li>Rob Nennig</li>
-          <li>Jeff Filsinger</li>
-          <li>DJ Richlen</li>
-          <li>Dave Bickler</li>
-          <li>Dano Hutchinson</li>
-          <li>Mike Kocher</li>
-          <li>Ben Kolar</li>
-          <li>Logan Manchek</li>
-          <li>Trevor Schwigel</li>
-          <li>Dominic McCadney</li>
-          <li>Mike Greene</li>
-          <li>Drew Baker</li>
-          <li>Kevin Diepohlz</li>
-          <li>Josh Campbell</li>
-          <li>Shad Ferguson</li>
-          <li>Nick Poulakos</li>
-        </ol>
-
-        <h3>Group B</h3>
-        <ol>
-          <li>John Poulakos</li>
-          <li>Jim Poulakos</li>
-          <li>Roman Kelly</li>
-          <li>Kyle Spader</li>
-          <li>Jeremiah Johnson</li>
-          <li>Kevin Dougherty</li>
-          <li>Bill Finn</li>
-          <li>Tom Gorski</li>
-          <li>Todd Kirchenberg</li>
-          <li>Pat Sierra</li>
-          <li>Mike Ausprung</li>
-          <li>Paul Ledvina</li>
-          <li>Joe Veierstahler</li>
-          <li>Dan Maren</li>
-          <li>Mike Binder</li>
-          <li>Chuck Schmeda</li>
-          <li>Randy Johnson</li>
-          <li>Rick Hrica</li>
-          <li>Dennis Poulakos</li>
-          <li>Ken Dobbs</li>
-          <li>Aaron Dobbs</li>
-          <li>Geoff Grommik</li>
-          <li>George Rios</li>
-          <li>Lindal Anderson</li>
-          <li>Rich Anderson</li>
-        </ol>
+        <div class="group">
+          <h3>Group A</h3>
+          <ol>
+            <li>Nick Hatch</li>
+            <li>Rhett Surman</li>
+            <li>Mike Van der Linden</li>
+            <li>Bill Long</li>
+            <li>Rob Kuhnke</li>
+            <li>Ryan Heeti</li>
+            <li>Brad Richter</li>
+            <li>Mike Richter</li>
+            <li>Kyle Oakland</li>
+            <li>Rob Nennig</li>
+            <li>Jeff Filsinger</li>
+            <li>DJ Richlen</li>
+            <li>Dave Bickler</li>
+            <li>Dano Hutchinson</li>
+            <li>Mike Kocher</li>
+            <li>Ben Kolar</li>
+            <li>Logan Manchek</li>
+            <li>Trevor Schwigel</li>
+            <li>Dominic McCadney</li>
+            <li>Mike Greene</li>
+            <li>Drew Baker</li>
+            <li>Kevin Diepohlz</li>
+            <li>Josh Campbell</li>
+            <li>Shad Ferguson</li>
+            <li>Nick Poulakos</li>
+          </ol>
+        </div>
+        <div class="group">
+          <h3>Group B</h3>
+          <ol>
+            <li>John Poulakos</li>
+            <li>Jim Poulakos</li>
+            <li>Roman Kelly</li>
+            <li>Kyle Spader</li>
+            <li>Jeremiah Johnson</li>
+            <li>Kevin Dougherty</li>
+            <li>Bill Finn</li>
+            <li>Tom Gorski</li>
+            <li>Todd Kirchenberg</li>
+            <li>Pat Sierra</li>
+            <li>Mike Ausprung</li>
+            <li>Paul Ledvina</li>
+            <li>Joe Veierstahler</li>
+            <li>Dan Maren</li>
+            <li>Mike Binder</li>
+            <li>Chuck Schmeda</li>
+            <li>Randy Johnson</li>
+            <li>Rick Hrica</li>
+            <li>Dennis Poulakos</li>
+            <li>Ken Dobbs</li>
+            <li>Aaron Dobbs</li>
+            <li>Geoff Grommik</li>
+            <li>George Rios</li>
+            <li>Lindal Anderson</li>
+            <li>Rich Anderson</li>
+          </ol>
+        </div>
       </div>
     </section>
   </main>
